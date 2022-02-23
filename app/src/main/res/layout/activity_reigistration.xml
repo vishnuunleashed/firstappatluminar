@@ -10,91 +10,105 @@
     <TextView
         android:id="@+id/textView11"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="25dp"
         android:text="Student Registration"
         android:textStyle="bold"
-        android:textSize="25sp"
+        android:textSize="20sp"
         android:layout_margin="10dp"/>
     <TableRow
         android:layout_below="@+id/textView11"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_marginTop="20sp"
+        android:layout_marginTop="0sp"
         android:id="@+id/rowone"
         >
 
 
-        <TextView
-            android:id="@+id/textView12"
+<!--        <TextView-->
+<!--            android:id="@+id/textView12"-->
+<!--            android:layout_width="200dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:text="First Name"-->
+
+<!--            android:layout_margin="5dp"-->
+<!--            android:padding="5dp"-->
+<!--            android:background="@drawable/textview_border"-->
+
+<!--            />-->
+
+        <EditText
+            android:id="@+id/editTextFirstName"
             android:layout_width="200dp"
             android:layout_height="match_parent"
-            android:text="First Name"
-
+            android:background="@drawable/textview_border"
             android:layout_margin="5dp"
             android:padding="5dp"
-            android:background="@drawable/textview_border"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="First Name"/>
 
-            />
-
-        <TextView
-            android:id="@+id/textView13"
+        <EditText
+            android:id="@+id/editTextSecondName"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@drawable/textview_border"
             android:layout_margin="5dp"
-            android:text="Second Name"
             android:padding="5dp"
-            android:background="@drawable/textview_border"/>
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Second Name"/>
     </TableRow>
 
     <TableRow
         android:layout_below="@+id/rowone"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_marginTop="20sp"
+        android:layout_marginTop="0sp"
         android:id="@+id/rowtwo"
         >
 
 
-        <TextView
-            android:id="@+id/textView14"
+        <EditText
+            android:id="@+id/editTextEmail"
             android:layout_width="200dp"
             android:layout_height="match_parent"
-            android:text="Email"
-
+            android:background="@drawable/textview_border"
             android:layout_margin="5dp"
             android:padding="5dp"
-            android:background="@drawable/textview_border"
-            />
-
-        <TextView
-            android:id="@+id/textView15"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Email"/>
+        <EditText
+            android:id="@+id/editTextPhoneNumber"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@drawable/textview_border"
             android:layout_margin="5dp"
-            android:text="Phone"
             android:padding="5dp"
-            android:background="@drawable/textview_border"/>
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Phone Number"/>
     </TableRow>
 
     <TableRow
         android:layout_below="@+id/rowtwo"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_marginTop="20sp"
+        android:layout_marginTop="0sp"
         android:id="@+id/rowthree"
         >
 
 
-        <TextView
-            android:id="@+id/textView16"
+        <EditText
+            android:id="@+id/editTextCityName"
             android:layout_width="200dp"
             android:layout_height="match_parent"
-            android:text="City"
-
+            android:background="@drawable/textview_border"
             android:layout_margin="5dp"
             android:padding="5dp"
-            android:background="@drawable/textview_border"
-            />
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="City"/>
 
     </TableRow>
 
@@ -106,7 +120,7 @@
         android:textSize="16dp"
         android:textStyle="bold"
         android:layout_margin="10dp"
-        android:layout_marginTop="20sp"
+        android:layout_marginTop="0sp"
         android:layout_below="@+id/rowthree"/>
 
     <RadioGroup
@@ -114,7 +128,7 @@
         android:layout_height="100dp"
         android:layout_marginLeft="20sp"
         android:layout_below="@+id/textView17"
-        android:id="@+id/rb1">
+        android:id="@+id/rg1">
 
         <RadioButton
             android:id="@+id/radioButton3"
@@ -137,8 +151,8 @@
         android:textSize="16dp"
         android:textStyle="bold"
         android:layout_margin="10dp"
-        android:layout_marginTop="20sp"
-        android:layout_below="@+id/rb1"/>
+        android:layout_marginTop="0sp"
+        android:layout_below="@+id/rg1"/>
 
     <CheckBox
         android:id="@+id/checkBox"
@@ -171,6 +185,7 @@
         android:id="@+id/editTextTextPassword"
         android:layout_width="match_parent"
         android:layout_height="30dp"
+        android:padding="6dp"
         android:background="@drawable/textview_border"
         android:ems="10"
         android:hint="Password"
@@ -185,8 +200,8 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-
-        android:text="Button"
+        android:onClick="registration_click"
+        android:text="Register"
         android:layout_below="@id/editTextTextPassword"
         android:gravity="center"/>
 

@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity{
+public class LogIn extends AppCompatActivity{
     EditText uname,pword;
     Button cancel;
     @Override
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity{
     public void onclick(View view) {
 
         if(uname.getText().toString().equals("Admin") && pword.getText().toString().equals("Admin")){
-            Intent i = new Intent(getApplicationContext(),HomePage.class);
+            Intent i = new Intent(getApplicationContext(),Reigistration.class);
             startActivity(i);
         }else{
             Toast.makeText(getApplicationContext(),"Incorrect login credential", Toast.LENGTH_SHORT).show();
