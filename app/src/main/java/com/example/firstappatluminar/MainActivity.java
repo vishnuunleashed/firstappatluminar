@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity{
     EditText uname,pword;
     Button cancel;
     @Override
@@ -21,8 +21,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     uname = findViewById(R.id.username);
     pword = findViewById(R.id.password);
+    cancel = findViewById(R.id.cancel);
 
-    cancel.setOnClickListener(this);
+    cancel.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            finish();
+        }
+    });
 
     }
 
@@ -37,8 +43,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    @Override
-    public void onClick(View view) {
-        finish();
-    }
+
 }
