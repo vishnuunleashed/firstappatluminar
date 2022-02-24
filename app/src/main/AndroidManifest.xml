@@ -10,7 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Firstappatluminar">
-        <activity android:name=".Reigistration"></activity>
+        <activity android:name=".Registration"></activity>
         <activity android:name=".HomePage" />
         <activity android:name=".SplashActivity">
             <intent-filter>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Reigistration">
+    tools:context=".Registration">
 
 
     <TextView
@@ -24,17 +24,7 @@
         >
 
 
-<!--        <TextView-->
-<!--            android:id="@+id/textView12"-->
-<!--            android:layout_width="200dp"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:text="First Name"-->
 
-<!--            android:layout_margin="5dp"-->
-<!--            android:padding="5dp"-->
-<!--            android:background="@drawable/textview_border"-->
-
-<!--            />-->
 
         <EditText
             android:id="@+id/editTextFirstName"
@@ -69,7 +59,7 @@
 
 
         <EditText
-            android:id="@+id/editTextEmail"
+            android:id="@+id/editTextUserName"
             android:layout_width="200dp"
             android:layout_height="match_parent"
             android:background="@drawable/textview_border"
@@ -77,7 +67,7 @@
             android:padding="5dp"
             android:ems="10"
             android:inputType="textPersonName"
-            android:hint="Email"/>
+            android:hint="User Name"/>
         <EditText
             android:id="@+id/editTextPhoneNumber"
             android:layout_width="match_parent"

@@ -106,5 +106,15 @@
         android:layout_marginLeft="50dp"
         android:layout_marginTop="25dp"
         />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/cancel"
+        android:text="Not a User? Register here!"
+        android:gravity="center"
+        android:layout_marginTop="20sp"
+        android:onClick="onclick_register"
+
+        />
 
 </RelativeLayout>
